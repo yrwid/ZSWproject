@@ -1,0 +1,3 @@
+def pr():
+	print("heh")
+
