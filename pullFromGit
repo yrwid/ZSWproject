@@ -1,0 +1,10 @@
+#jupyter notebook format
+# first cell -----------------------------------------------------
+%%bash
+git clone https://github.com/yrwid/zswproject/
+
+# second cell -----------------------------------------------------
+import importlib.util
+spec = importlib.util.spec_from_file_location("module.name", "zswproject/JSmodule.py")
+foo = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(foo)
